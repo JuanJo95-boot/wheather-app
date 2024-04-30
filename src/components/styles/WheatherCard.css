@@ -1,0 +1,78 @@
+.card {
+    width: 100%;
+    max-width: 22em;
+    background-color: #fffb;
+    padding: 2em 1.5em;
+    border-radius: 0.8em;
+}
+.card__title{
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.7em;
+    
+}
+.card__country{
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+.card__body{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    align-items: center;
+    margin-bottom: 2em;
+}
+.card__image {
+    width: 100%;
+}
+.info {
+    display: grid;
+    gap: 1em;
+}
+.info__title{
+    font-size: 1em;
+    text-align: center;
+    font-weight: 500;
+    &::after, &::before{
+        content: '"';
+    }
+    
+}
+.info__list {
+    display: grid;
+    gap: 0.5em;
+}
+.info__item{
+    font-size: 0.9em;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+.info__label{
+    color: #555;
+}
+.info__value{
+    font-weight: 500;
+}
+.card__temp{
+    text-align: center;
+    margin-bottom: 1em;
+    font-weight: 500;
+}
+.card__btn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1em;
+    background-color: rgb(247, 243, 208);
+    padding: 0.6em 2em;
+    border-radius: 0.5em;
+    &:hover{
+        filter: brightness(1,2);
+    }
+}
+@media screen and (min-width: 1000px) {
+    .card {
+        font-size: 1.3rem;
+    }
+}
